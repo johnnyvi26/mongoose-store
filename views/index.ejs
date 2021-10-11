@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/headTag.ejs') %>
+<body>
+    <a href='/products/new'">Add a new product</a>
+    <h1>SHOP</h1>
+    <ul>
+        <% products.forEach(product=> {%>
+            <li style="display: inline; margin-left: 15px;">
+                <h3><%= product.name %></h3>
+                <a href="/products/<%= product._id %>">
+                    <img src="<%= product.img%>">
+                </a>
+                <h5>Price: $<%= product.price %></h5>
+
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

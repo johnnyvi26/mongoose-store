@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/headTag.ejs') %>
+<body>
+    <button onclick="window.location.href='/products'">Back to product </button>
+    <h1>ADD NEW ITEM</h1>
+    <form action="/products/new" method="POST">
+    <h3>NAME</h3><input type="text" name="name" /><br />
+    <h3>Description</h3><input type="text" name="description" /><br />
+    <h3>IMG</h3><input type="text" name="img" /><br />
+    <h3>PRICE</h3><input type="text" name="price" /><br />
+    <h3>QTY</h3><input type="text" name="qty" /><br />
+    <input type="submit" name="" value="Add Product" />
+    </form>
+</body>
+</html>

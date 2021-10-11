@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(16, 164, 233);
+    text-align: center;
+}
+
+h1{
+    color: azure;
+}
+
+.delete{
+    color: whitesmoke;
+    background-color: brown;
+}
+
+.buy{
+    color: whitesmoke;
+    background-color: rgb(30, 255, 0);
+}
+
+.container {
+    border: 50px;
+    border-color: burlywood;
+}
